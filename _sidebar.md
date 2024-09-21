@@ -1,4 +1,4 @@
 - SideBar
   
-  - [Main Page](About.md)
-  - 
+  - [About me](About.md)
+  - [Research](Research.md)
