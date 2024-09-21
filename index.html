@@ -6,17 +6,118 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <!-- Theme: Simple -->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  
+
+  <style>
+    :root {
+      /* Reduce the font size */
+      /*--base-font-size: 14px;*/
+
+      /* Change the theme color hue */
+      /*--theme-hue: 325;*/
+
+      /* Change the sidebar bullets */
+      /*--sidebar-nav-link-before-content: '😀';*/
+    }
+  </style>
+
+  
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: ''
+      name: 'Jay Yu',
+      repo: 'https://github.com/Jayqianonedream',
+      //set homepage(default:README.md)
+      homepage:'About.md',
+
+
+      //load side bar
+      loadSidebar: true,
+      loadSidebar: '_sidebar.md',
+      subMaxLevel: 5,
+
+      //no emoji
+      noEmoji: true,
+
+      //load navigation bar
+      loadNavbar: true,
+      loadNavbar: '_navbar.md',
+
+      //scroll to the top of the screen when the route is changed
+      auto2top: true,
+
+      toc: {
+        tocMaxLevel: 5,
+        target: 'h1, h2, h3, h4, h5'
+      },
+
+
+      //docsify-copy-code
+      copyCode: {
+        buttonText : 'Copy to clipboard',
+        errorText  : 'Error',
+        successText: 'Copied'
+      },
+
+
+
+      mergeNavbar: true,
+      themeable: {
+          readyTransition : true, // default
+          responsiveTables: true  // default
+      },
+
+      latex: {
+        inlineMath   : [['$', '$'], ['\\(', '\\)']], // default
+        displayMath  : [['$$', '$$']],               // default
+      }
+
+
     }
   </script>
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- docsify-themeable (latest v0.x.x) -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
+
+  <!-- Docsify v4 -->
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <!-- LaTeX display engine -->
+  <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  <!--  docsify-latex plugin -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-latex@0"></script>
+
+
+  <!-- toc plugin https://github.com/justintien/docsify-plugin-toc -->
+  <!-- <script src="//unpkg.com/docsify-plugin-toc"></script> -->
+  <!-- body -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css">
+  <script src="https://unpkg.com/docsify-plugin-toc@1.3.1/di
+
+  <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
+  <script src="//cdn.jsdelivr.net/npm/marked@4"></script>
+
+  <!-- CDN files for docsify-katex -->
+  <script src="//cdn.jsdelivr.net/npm/docsify-katex@latest/dist/docsify-katex.js"></script>
+  <!-- or <script src="//cdn.jsdelivr.net/gh/upupming/docsify-katex@latest/dist/docsify-katex.js"></script> -->
+
+  
+  <!-- Latest v2.x.x -->
+  <!-- https://github.com/jperasmus/docsify-copy-code -->
+  <script src="https://unpkg.com/docsify-copy-code@2"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1.26.0/components/prism-python.js"></script>
+
+
+
+  
+
+
+
 </body>
 </html>
